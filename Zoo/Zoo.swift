@@ -13,6 +13,9 @@ class Zoo {
     let zooName: String
     let zookeeper: String
     var pensInZoo: [Pen]?
+    var animalsInZoo: [Animal]?
+    var babyAnimalsInZoo: [BabyAnimal]?
+    var unassignedAnimals: Int? //computed property
     
     init(zooName: String, zookeeper: String) {
         

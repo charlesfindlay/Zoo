@@ -13,12 +13,14 @@ class Animal {
     var name: String
     var species: String
     var gender: String
+    var assignedToPen: Bool
     
-    init(name: String, species: String, gender: String) {
+    init(name: String, species: String, gender: String, assigned: Bool) {
         
         self.name = name
         self.species = species
         self.gender = gender
+        self.assignedToPen = false
     }
     
 }

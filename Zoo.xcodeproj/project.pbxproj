@@ -16,6 +16,7 @@
 		3F60103E1BC40E3B008D4544 /* BabyAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60103D1BC40E3B008D4544 /* BabyAnimal.swift */; settings = {ASSET_TAGS = (); }; };
 		3F6010401BC40E84008D4544 /* Pen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F60103F1BC40E84008D4544 /* Pen.swift */; settings = {ASSET_TAGS = (); }; };
 		3F6010421BC40F27008D4544 /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6010411BC40F27008D4544 /* Zoo.swift */; settings = {ASSET_TAGS = (); }; };
+		3F6010441BC41A12008D4544 /* AddAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6010431BC41A12008D4544 /* AddAnimalViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F60103D1BC40E3B008D4544 /* BabyAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyAnimal.swift; sourceTree = "<group>"; };
 		3F60103F1BC40E84008D4544 /* Pen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pen.swift; sourceTree = "<group>"; };
 		3F6010411BC40F27008D4544 /* Zoo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
+		3F6010431BC41A12008D4544 /* AddAnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnimalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,9 @@
 		3F6010271BC409EB008D4544 /* Zoo */ = {
 			isa = PBXGroup;
 			children = (
+				3F6010451BC41A1A008D4544 /* ViewControllers */,
 				3F60103A1BC40C8E008D4544 /* Model */,
 				3F6010281BC409EB008D4544 /* AppDelegate.swift */,
-				3F60102A1BC409EB008D4544 /* HomeViewController.swift */,
 				3F60102C1BC409EB008D4544 /* Main.storyboard */,
 				3F60102F1BC409EB008D4544 /* Assets.xcassets */,
 				3F6010311BC409EB008D4544 /* LaunchScreen.storyboard */,
@@ -82,6 +84,15 @@
 				3F6010411BC40F27008D4544 /* Zoo.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		3F6010451BC41A1A008D4544 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F60102A1BC409EB008D4544 /* HomeViewController.swift */,
+				3F6010431BC41A12008D4544 /* AddAnimalViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 				3F6010291BC409EB008D4544 /* AppDelegate.swift in Sources */,
 				3F60103C1BC40D19008D4544 /* Animal.swift in Sources */,
 				3F60103E1BC40E3B008D4544 /* BabyAnimal.swift in Sources */,
+				3F6010441BC41A12008D4544 /* AddAnimalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

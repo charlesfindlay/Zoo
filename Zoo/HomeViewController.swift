@@ -19,18 +19,23 @@ class HomeViewController: UIViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-
+        
+        
         zooNameLabel.text = myZoo.zooName
         zookeeperNameLabel.text = "Zookeeper \(myZoo.zookeeper)"
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     
-
-
+    @IBAction func addAnimalToZoo(sender: AnyObject) {
+    }
+    
+    
+    
 }
 
