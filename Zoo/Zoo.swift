@@ -10,12 +10,11 @@ import Foundation
 
 class Zoo {
     
-    let zooName: String
-    let zookeeper: String
+    let zooName: String?
+    let zookeeper: String?
     var pensInZoo: [Pen]?
-    var animalsInZoo: [Animal]?
+    var animalsInZoo: Array<Animal>?
     var babyAnimalsInZoo: [BabyAnimal]?
-    var unassignedAnimals: Int? //computed property
     
     init(zooName: String, zookeeper: String) {
         
@@ -23,9 +22,15 @@ class Zoo {
         self.zookeeper = zookeeper
     }
     
-//    func createZoo(zooName: String, zookeeper: String) {
-//        
-//    }
+    func populateZoo() {
+        let newAnimal1 = Animal(name: "Lucy", species: "Tiger", gender: "Female")
+        
+        animalsInZoo?.append(newAnimal1)
+    }
     
+    
+    func addAnimalToZoo(workingZoo: Zoo, newAnimal: Animal) {
+        workingZoo.animalsInZoo?.append(newAnimal)
+    }
     
 }

@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var zookeeperNameLabel: UILabel!
     
     
-    var myZoo=Zoo(zooName: "The Happy Animal Place Zoo", zookeeper: "Charles")
+    var myZoo = Zoo(zooName: "The Happy Animal Place Zoo", zookeeper: "Charles")
     
     
     override func viewWillAppear(animated: Bool) {
@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         
         zooNameLabel.text = myZoo.zooName
         zookeeperNameLabel.text = "Zookeeper \(myZoo.zookeeper)"
-        
+        myZoo.populateZoo()
         
     }
     
@@ -32,9 +32,20 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func addAnimalToZoo(sender: AnyObject) {
+    
+    @IBAction func listAnimalsInZoo(sender: UIButton) {
+        print(myZoo.animalsInZoo?.count)
+        
     }
     
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "addAnimal" {
+            let vc = segue.destinationViewController as! AddAnimalViewController
+            vc.myZoo = myZoo
+        }
+    }
     
     
 }

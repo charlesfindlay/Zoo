@@ -40,8 +40,14 @@
                                 <rect key="frame" x="87" y="269" width="147" height="30"/>
                                 <state key="normal" title="Add an Animal to Zoo"/>
                                 <connections>
-                                    <action selector="addAnimalToZoo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njk-2n-v41"/>
-                                    <segue destination="khy-gg-0UM" kind="push" id="Sjq-5Y-MBH"/>
+                                    <segue destination="khy-gg-0UM" kind="push" identifier="addAnimal" id="Sjq-5Y-MBH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqo-dg-wCM">
+                                <rect key="frame" x="95" y="323" width="130" height="30"/>
+                                <state key="normal" title="List Animals in Zoo"/>
+                                <connections>
+                                    <action selector="listAnimalsInZoo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnn-pp-3Ri"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,20 +86,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-4x-Vdb">
-                                <rect key="frame" x="112" y="290" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Species" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7wQ-t4-NRz">
                                 <rect key="frame" x="112" y="214" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-4x-Vdb">
+                                <rect key="frame" x="112" y="290" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDG-qX-yr0">
+                                <rect key="frame" x="107" y="387" width="107" height="30"/>
+                                <state key="normal" title="Add this Animal"/>
+                                <connections>
+                                    <action selector="confirmAddAnimal:" destination="khy-gg-0UM" eventType="touchUpInside" id="1o6-Vl-z1E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1ID-0l-3df"/>
+                    <connections>
+                        <outlet property="newAnimalGender" destination="CIU-4x-Vdb" id="tyF-XR-4uB"/>
+                        <outlet property="newAnimalName" destination="4ag-A2-R3T" id="Gcx-DW-w7b"/>
+                        <outlet property="newAnimalSpecies" destination="7wQ-t4-NRz" id="yPR-Vh-3uI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z52-CP-2tD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

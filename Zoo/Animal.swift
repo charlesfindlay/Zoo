@@ -15,7 +15,7 @@ class Animal {
     var gender: String
     var assignedToPen: Bool
     
-    init(name: String, species: String, gender: String, assigned: Bool) {
+    init(name: String, species: String, gender: String) {
         
         self.name = name
         self.species = species
