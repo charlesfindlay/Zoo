@@ -19,4 +19,10 @@ class Zoo {
         self.zooName = zooName
         self.zookeeper = zookeeper
     }
+    
+//    func createZoo(zooName: String, zookeeper: String) {
+//        
+//    }
+    
+    
 }

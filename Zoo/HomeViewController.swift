@@ -11,8 +11,15 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
+    @IBOutlet weak var zooNameLabel: UILabel!
+    
+    
+    var myZoo=Zoo(zooName: "The Happy Animal Place Zoo", zookeeper: "Charles")
+    
+    
     override func viewWillAppear(animated: Bool) {
-        Zoo.createZoo()
+
+        zooNameLabel.text = myZoo.zooName
     }
     
     override func viewDidLoad() {
