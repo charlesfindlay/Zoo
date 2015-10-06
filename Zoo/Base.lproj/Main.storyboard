@@ -16,17 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-lh-jeE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-lh-jeE">
                                 <rect key="frame" x="20" y="28" width="280" height="86"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="fFM-CE-hZc"/>
+                                    <constraint firstAttribute="height" constant="86" id="hlF-Z5-qno"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcT-w9-Nm7">
+                                <rect key="frame" x="20" y="122" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="7mt-SR-Ikp"/>
+                                    <constraint firstAttribute="height" constant="40" id="Dvh-3L-95q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VcT-w9-Nm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="28q-wf-swD"/>
+                            <constraint firstItem="OhF-lh-jeE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6aU-I3-vTM"/>
+                            <constraint firstItem="VcT-w9-Nm7" firstAttribute="top" secondItem="OhF-lh-jeE" secondAttribute="bottom" constant="8" id="Lwl-wY-7Yr"/>
+                            <constraint firstItem="OhF-lh-jeE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rkY-I1-9t5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="zooNameLabel" destination="OhF-lh-jeE" id="Nx4-8X-q66"/>
+                        <outlet property="zookeeperNameLabel" destination="VcT-w9-Nm7" id="sAZ-Z4-Bmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
